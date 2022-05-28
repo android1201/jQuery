@@ -3,6 +3,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js">
     <script>
     <script>
+        $(window).ready(() => {
+          $(window).load(() => {
+              console.log('window loaded');
+          });
+          $(window).unload(() => {
+            console.log('window unloaded');
+          });
+          $(window).resize(() => {
+
+              console.log('window resized');
+
+          });
+          $(window).scroll(() => {
+
+              console.log('window scrolled');
+
+          });
+        });
     </script>
   </body>
 </html>
