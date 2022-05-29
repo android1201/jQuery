@@ -1,0 +1,18 @@
+<script>
+fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpm235W9WRDMNpOb6WWccOwS1wz6QH6lwX7w&usqp=CAU')
+  .then(resp => resp.blob())
+  .then(blob => {
+    const url = window.URL.createObjectURL(blob);
+    console.log(url);
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = url;
+    // the filename you want
+    a.download = 'todo-1.json';
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+    alert('your file has downloaded!'); // or you know, something with better UX...
+  })
+  .catch(() => alert('oh no!'));
+ </script>
