@@ -59,16 +59,14 @@ hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
     <body>
     <script>
         $(document).ready(() => {
-          $(window).load(() => {
               $('#x').removeClass('orange, yellow, purple, green, red').addClass('purple');
-          });
-          $(window).unload(() => {
+          $('#y').unload(() => {
               $('#x').removeClass('orange, yellow, purple, green, red').addClass('red');
           });
-          $(window).resize(() => {
+          $('#y').resize(() => {
               $('#x').removeClass('orange, yellow, purple, green, red').addClass('green');
           });
-          $(window).scroll(() => {
+          $('#y').scroll(() => {
               $('#x').removeClass('orange, yellow, purple, green, red').addClass('yellow');
           });
         });
