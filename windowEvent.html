@@ -1,23 +1,75 @@
 <html>
-    <body>
+<head>
+<style>
+.green {
+background: green;
+}
+.red {
+background: green;
+}
+.purple {
+background: purle;
+}
+.yellow {
+background: yellow;
+}
+#x {
+height: 75px;
+width: 75px;
+}
+.orange {
+background: orange;
+}
+#y {
+height: 300px;
+width: 300px;
+overflow: auto;
+}
+</style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<div class="red" id="y">
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+hsjsjsjsnndndndndmdmdmdmdmdmndndndndndndndndndnndndndndn
+</div>
+<div class="orange" id="x">
+</div>
+    <body>
     <script>
         $(document).ready(() => {
           $(window).load(() => {
-              alert('window loaded');
+              $('#x').removeClass('orange, yellow, purple, green, red').addClass('purple');
           });
           $(window).unload(() => {
-            alert('window unloaded');
+              $('#x').removeClass('orange, yellow, purple, green, red').addClass('red');
           });
           $(window).resize(() => {
-
-              alert('window resized');
-
+              $('#x').removeClass('orange, yellow, purple, green, red').addClass('green');
           });
           $(window).scroll(() => {
-
-              alert('window scrolled');
-
+              $('#x').removeClass('orange, yellow, purple, green, red').addClass('yellow');
           });
         });
     </script>
